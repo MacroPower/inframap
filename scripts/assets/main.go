@@ -29,7 +29,7 @@ func main() {
 		if pr == provider.Raw || pr == provider.IM {
 			continue
 		}
-		url := fmt.Sprintf("https://raw.githubusercontent.com/cycloidio/tfdocs/%s/assets/%s/icons.json", branch, pr)
+		url := fmt.Sprintf("https://raw.githubusercontent.com/MacroPower/tfdocs/%s/assets/%s/icons.json", branch, pr)
 
 		res, err := http.Get(url)
 		if err != nil {
